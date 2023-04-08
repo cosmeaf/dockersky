@@ -1,0 +1,24 @@
+/* 
+* CSS DockerSky
+* Create by Cosme Alves
+* Propose: Main page of project Docker Sky
+* Date: 08/04/2023
+*/
+
+
+
+.icon-large {
+    font-size: 4rem;
+  }
+  
+  .icon-large:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+
+  /* Pricing */
+#precos {
+    min-height: 700px;
+}
