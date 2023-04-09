@@ -1,0 +1,28 @@
+version: '3.3'
+
+services:
+  django:
+    build: .
+    container_name: dockersky
+    hostname: dockersky
+    volumes:
+      - dockersky_vol:/app
+    ports:
+      - "8000:8000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.django.rule=Host(`django.example.com`)"
+      - "traefik.http.routers.django.entrypoints=http,https"
+      - "traefik.http.routers.django.tls.certresolver=http"
+      - "traefik.http.routers.django.service=django"
+      - "traefik.http.services.django.loadbalancer.server.port=8000"
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true
+
+volumes:
+  dockersky_vol:
+    external: true

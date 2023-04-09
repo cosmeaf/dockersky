@@ -1,16 +1,24 @@
-FROM python:3.9
+# imagem base
+FROM python:3.8-slim-buster
 
-ENV PYTHONUNBUFFERED=1
+# seta as variáveis de ambiente
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
+# cria e seta o diretório de trabalho
+RUN mkdir /app
 WORKDIR /app
 
-COPY requirements.txt /app/
+# adiciona e instala as dependências
+RUN pip install --upgrade setuptools
+RUN pip install --upgrade pip
 
-RUN pip install --no-cache-dir -r requirements.txt
+COPY ./requirements.txt /app
 
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# copia o código para o container
 COPY . /app/
 
-EXPOSE 8001
-
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8001", "--secure-redirect-exempt"]
-
+# executa o Gunicorn
+CMD ["gunicorn", "--workers", "2", "app.wsgi", "-b", "0.0.0.0:8001", "--log-level", "debug"]
