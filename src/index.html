@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Sky</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">DockerS ky</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary btn-sm"><i class="fa fa-user"></i> Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SlideShow -->
+    <section id="slideshow">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://unsplash.com" target="_blank">
+                        <img src="https://source.unsplash.com/random/800x600" class="d-block w-100" alt="Slide 1">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://unsplash.com" target="_blank">
+                        <img src="https://source.unsplash.com/random/800x600" class="d-block w-100" alt="Slide 2">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://unsplash.com" target="_blank">
+                        <img src="https://source.unsplash.com/random/800x600" class="d-block w-100" alt="Slide 3">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Card Stacks -->
+    <section id="card-stacks">
+        <div class="container">
+            <h2 class="text-center">OFFICIALLY SUPPORTED LANGUAGES</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-node-js fa-5x text-cloudflare-yellow"></i>
+                            <h5 class="card-title">Node.js</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-java fa-5x text-cloudflare-yellow"></i>
+                            <h5 class="card-title">Java</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-php fa-5x text-cloudflare-yellow"></i>
+                            <h5 class="card-title">PHP</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-python fa-5x text-cloudflare-yellow"></i>
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h4 class="text-center mt-4">In addition to our officially supported languages, you can use any language
+                that
+                runs on Linux with DockerSky via a third-party buildpack. All DockerSky Buildpacks →</h4>
+        </div>
+    </section>
+
+
+    <!-- Scalabilidade -->
+    <section id="scalabilidade" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Scalabilidade</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-code fa-5x text-cloudflare-blue"></i>
+                    <h4 class="mt-3">Developers</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-users fa-5x text-cloudflare-blue"></i>
+                    <h4 class="mt-3">Teams</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-rocket fa-5x text-cloudflare-blue"></i>
+                    <h4 class="mt-3">Startups</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-building fa-5x text-cloudflare-blue"></i>
+                    <h4 class="mt-3">Enterprises</h4>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-briefcase fa-5x text-cloudflare-blue"></i>
+                    <h4 class="mt-3">Agencies</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Como Funciona</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/random" alt="Imagem Aleatória" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h4>Introdução ao DockerSky:</h4>
+                    <p>O DockerSky é uma plataforma de gerenciamento de contêineres de código aberto que facilita a
+                        implantação e o gerenciamento de aplicativos em contêineres. Com o DockerSky, você pode criar,
+                        implantar e gerenciar contêineres em várias nuvens, proporcionando uma experiência de
+                        orquestração de contêineres simplificada.</p>
+                    <p>Para saber mais sobre o DockerSky, Clique em saiba mais.</p>
+                    <button class="btn btn-primary">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Clientes -->
+    <section id="nossos-clientes" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Nossos Clientes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div id="carouselClientes" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselClientes" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselClientes" data-slide-to="1"></li>
+                            <li data-target="#carouselClientes" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <img src="./assets/images/depoiments/profile-picture-1.jpg" alt="Cliente 1"
+                                            class="rounded-circle mb-3" style="width: 100px;">
+                                        <h5 class="card-title">Cliente 1</h5>
+                                        <p class="card-text">"Com o serviço da nossa empresa, conseguimos alcançar
+                                            resultados incríveis. Recomendo a todos!"</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star-half-alt text-cloudflare-yellow"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <img src="./assets/images/depoiments/profile-picture-2.jpg" alt="Cliente 2"
+                                            class="rounded-circle mb-3" style="width: 100px;">
+                                        <h5 class="card-title">Cliente 2</h5>
+                                        <p class="card-text">"Estamos muito satisfeitos com o serviço oferecido. Sem
+                                            dúvidas, a melhor opção do mercado!"</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star-half-alt text-cloudflare-yellow"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <img src="./assets/images/depoiments/profile-picture-3.jpg" alt="Cliente 3"
+                                            class="rounded-circle mb-3" style="width: 100px;">
+                                        <h5 class="card-title">Cliente 3</h5>
+                                        <p class="card-text">"Excelente atendimento e suporte. Recomendo a todos que
+                                            buscam uma solução confiável."</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star text-cloudflare-yellow"></i>
+                                            <i class="fas fa-star-half-alt text-cloudflare-yellow"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselClientes" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselClientes" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Preços -->
+    <section id="precos" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Preços</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Plano Gratuito</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-price">$0/mês</h3>
+                            <ul class="list-unstyled">
+                                <li>Recursos básicos</li>
+                                <li>1 Contêiner</li>
+                                <li>Suporte Comunitário</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Obter Plano</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Plano Silver</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-price">$4.99/mês</h3>
+                            <ul class="list-unstyled">
+                                <li>Recursos avançados</li>
+                                <li>5 Contêineres</li>
+                                <li>Suporte Prioritário</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Obter Plano</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Plano Gold</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-price">$9.99/mês</h3>
+                            <ul class="list-unstyled">
+                                <li>Recursos premium</li>
+                                <li>10 Contêineres</li>
+                                <li>Suporte 24/7</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Obter Plano</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Plano Platinum</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-price">$99.99/mês</h3>
+                            <ul class="list-unstyled">
+                                <li>Recursos exclusivos</li>
+                                <li>ILIMITADOS Contêineres</li>
+                                <li>Suporte dedicado</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Obter Plano</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer id="rodape" class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h4>Produtos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Deploy de Contêiner</a></li>
+                        <li><a href="#">Gerenciamento de Contêineres</a></li>
+                        <li><a href="#">Integração Contínua</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Recursos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Equipe</a></li>
+                        <li><a href="#">Clientes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Suporte</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Chat ao vivo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Social Media</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2023 Docker Sky. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-right">
+                        <li class="list-inline-item"><a href="#">Termos</a></li>
+                        <li class="list-inline-item"><a href="#">Cookies</a></li>
+                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS (colocado no final do body para melhor desempenho) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js
+</body>
+
+</html>

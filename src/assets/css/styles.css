@@ -1,0 +1,117 @@
+/* Main slide Docker Sky */
+
+/* IMPORTANT  BOOTSTRAP COLOR CHANGE */
+.btn-primary {
+    background-color: #FFA726; /* Substitua pela cor amarela do Cloudflare */
+    border-color: #FFA726; /* Substitua pela cor amarela do Cloudflare */
+  }
+  
+  .btn-primary:hover {
+    background-color: #FF9800; /* Substitua pela cor amarela mais clara do Cloudflare */
+    border-color: #FF9800; /* Substitua pela cor amarela mais clara do Cloudflare */
+  }
+  
+  .btn-primary:focus,
+  .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 167, 38, 0.5); /* Substitua pela cor amarela do Cloudflare */
+  }
+  
+  .btn-primary.disabled,
+  .btn-primary:disabled {
+    background-color: #FFA726; /* Substitua pela cor amarela do Cloudflare */
+    border-color: #FFA726; /* Substitua pela cor amarela do Cloudflare */
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #FF9800; /* Substitua pela cor amarela mais clara do Cloudflare */
+    border-color: #FF9800; /* Substitua pela cor amarela mais clara do Cloudflare */
+  }
+
+  
+/* Cores personalizadas do Cloudflare */
+.text-cloudflare-yellow {
+    color: #FFA726; /* Substitua pela cor amarela do Cloudflare */
+  }
+  
+  .text-cloudflare-blue {
+    color: #007BFF; /* Substitua pela cor azul do Cloudflare */
+  }
+  
+  .text-cloudflare-red {
+    color: #FF0000; /* Substitua pela cor vermelha do Cloudflare */
+  }
+  
+  .text-cloudflare-green {
+    color: #28A745; /* Substitua pela cor verde do Cloudflare */
+  }
+  
+/* 
+<i class="fas fa-star text-cloudflare-yellow"></i>
+<i class="fas fa-check-circle text-cloudflare-blue"></i>
+<i class="fas fa-times-circle text-cloudflare-red"></i>
+<i class="fas fa-check-circle text-cloudflare-green"></i>
+*/
+
+
+  /* Normal CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+  
+#slideshow {
+    height: 50vh;
+    overflow: hidden;
+}
+
+#carouselExample .carousel-inner {
+    height: 100%;
+}
+
+#carouselExample .carousel-item {
+    height: 100%;
+}
+
+#carouselExample .carousel-item img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+/* Stecks Cards */
+#card-stacks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    margin-top: 20px;
+}
+
+/* Espaçamento */
+section {
+    margin-bottom: 50px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 10px;
+}
+.col-md-6 {
+    margin-bottom: 20px;
+}
